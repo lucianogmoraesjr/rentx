@@ -4,8 +4,18 @@ import { ICategoriesRepositories, ICategoryDTO } from './ICategoriesRepository';
 export class CategoriesRepository implements ICategoriesRepositories {
   private categories: Category[];
 
-  constructor() {
+  private static INSTANCE: CategoriesRepository;
+
+  private constructor() {
     this.categories = [];
+  }
+
+  public static getInstance(): CategoriesRepository {
+    if (!CategoriesRepository.INSTANCE) {
+      CategoriesRepository.INSTANCE = new CategoriesRepository();
+    }
+
+    return CategoriesRepository.INSTANCE;
   }
 
   create({ name, description }: ICategoryDTO): void {
