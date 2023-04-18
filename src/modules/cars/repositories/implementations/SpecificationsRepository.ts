@@ -2,7 +2,7 @@ import { Specification } from '../../entities/Specification';
 import {
   ISpecificationDTO,
   ISpecificationsRepository,
-} from './ISpecificationsRepository';
+} from '../ISpecificationsRepository';
 
 export class SpecificationsRepository implements ISpecificationsRepository {
   private specifications: Specification[];
