@@ -5,7 +5,7 @@ interface IRequest {
   description: string;
 }
 
-export class CreateSpecificationService {
+export class CreateSpecificationUseCase {
   constructor(private specificationsRepository: ISpecificationsRepository) {}
 
   async execute({ name, description }: IRequest): Promise<void> {
