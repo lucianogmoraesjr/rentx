@@ -5,7 +5,7 @@ interface IRequest {
   description: string;
 }
 
-export class CreateCategoryService {
+export class CreateCategoryUseCase {
   constructor(private categoriesRepository: ICategoriesRepositories) {}
 
   async execute({ name, description }: IRequest) {
