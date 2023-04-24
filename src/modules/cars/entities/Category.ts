@@ -1,10 +1,19 @@
+import { Column, CreateDateColumn, Entity, PrimaryColumn } from 'typeorm';
 import { v4 as uuid } from 'uuid';
 
+@Entity('categories')
 export class Category {
-  private id?: string;
+  @PrimaryColumn()
+  id?: string;
+
+  @Column()
   name: string;
-  private description: string;
-  private created_at: Date;
+
+  @Column()
+  description: string;
+
+  @CreateDateColumn()
+  created_at: Date;
 
   constructor() {
     if (!this.id) {
