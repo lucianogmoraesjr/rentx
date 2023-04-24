@@ -1,4 +1,4 @@
-FROM node
+FROM node:18
 
 ENV NODE_OPTIONS=--max-old-space-size=4096
 
