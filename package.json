@@ -5,7 +5,8 @@
   "author": "Luciano Moraes Jr. <lucianogmoraesjr@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "typeorm": "tsx ./node_modules/typeorm/cli"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
