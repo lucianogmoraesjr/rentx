@@ -50,6 +50,5 @@ export class ImportCategoriesUseCase {
         this.categoriesRepository.create({ name, description });
       }
     });
-    console.log(categories);
   }
 }
