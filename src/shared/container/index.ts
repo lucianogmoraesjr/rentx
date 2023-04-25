@@ -3,6 +3,8 @@ import { ICategoriesRepositories } from '../../modules/cars/repositories/ICatego
 import { CategoriesRepository } from '../../modules/cars/repositories/implementations/CategoriesRepository';
 import { ISpecificationsRepository } from '../../modules/cars/repositories/ISpecificationsRepository';
 import { SpecificationsRepository } from '../../modules/cars/repositories/implementations/SpecificationsRepository';
+import { IUsersRepository } from '../../modules/accounts/repositories/IUsersRepository';
+import { UsersRepository } from '../../modules/accounts/repositories/implementations/UsersRepository';
 
 container.registerSingleton<ICategoriesRepositories>(
   'CategoriesRepository',
@@ -12,4 +14,9 @@ container.registerSingleton<ICategoriesRepositories>(
 container.registerSingleton<ISpecificationsRepository>(
   'SpecificationsRepository',
   SpecificationsRepository,
+);
+
+container.registerSingleton<IUsersRepository>(
+  'UsersRepository',
+  UsersRepository,
 );
