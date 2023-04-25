@@ -10,6 +10,6 @@ export class ImportCategoriesController {
 
     await importCategoriesUseCase.execute(file);
 
-    return response.send();
+    return response.status(201).send();
   }
 }
