@@ -3,13 +3,13 @@ import { v4 as uuid } from 'uuid';
 
 @Entity('categories')
 export class Category {
-  @PrimaryColumn('uuid')
+  @PrimaryColumn()
   id?: string;
 
-  @Column('varchar')
+  @Column()
   name: string;
 
-  @Column('varchar')
+  @Column()
   description: string;
 
   @CreateDateColumn()
