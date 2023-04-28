@@ -1,6 +1,6 @@
-import { AppError } from '../../../../errors/AppError';
-import { IUsersRepository } from '../../repositories/IUsersRepository';
-import { UsersRepostoriesInMemory } from '../../repositories/in-memory/UsersRepositoryInMemory';
+import { AppError } from '@errors/AppError';
+import { IUsersRepository } from '@modules/accounts/repositories/IUsersRepository';
+import { UsersRepostoriesInMemory } from '@modules/accounts/repositories/in-memory/UsersRepositoryInMemory';
 import { CreateUserUseCase } from '../create-user/CreateUserUseCase';
 import { AuthenticateUserUseCase } from './AuthenticateUserUseCase';
 
