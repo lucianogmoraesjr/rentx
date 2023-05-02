@@ -8,6 +8,10 @@ import swaggerSetup from '../../../swagger.json';
 import { AppError } from '@shared/errors/AppError';
 import { router } from './routes';
 
+import '@shared/infra/typeorm';
+
+import '@shared/container';
+
 const app = express();
 
 app.use(express.json());
